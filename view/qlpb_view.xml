@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_qlpb_tree" model="ir.ui.view" >
+            <field name="name">qlpb.tree</field>
+            <field name="model">quanly.phongban</field>
+            <field name="priority" eval="8"></field>
+            <field name="arch" type="xml">
+                    <tree string="">
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="describe"/>
+                    </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_qlpb_form">
+            <field name="name">qlpb.form</field>
+            <field name="model">quanly.phongban</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                    <form string="">
+                        <sheet>
+                            <group col="4" name="main">
+                                <field name="name" colspan="2"/>
+                                <field name="code" colspan="2"/>
+                                <field name="describe" colspan="4"/>
+                                <field name="m2m" colspan="4"/>
+                            </group>
+                        </sheet>
+                    </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_qlpb_search">
+            <field name="name">qlpb.search</field>
+            <field name="model">quanly.phongban</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                    <search string="">
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="describe"/>
+                    </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_qlpb_view">
+            <field name="name">Quan Ly Phong Ban</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">quanly.phongban</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_qlpb_search"/>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem id="menu_qlpb" name="Quan Ly Phong Ban" sequence="1" action="act_open_qlpb_view"/>
+    </data>
+</odoo>

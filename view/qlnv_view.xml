@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_qlnv_tree">
+            <field name="name">qlnv.tree</field>
+            <field name="model">quanly.nhanvien</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                    <tree string="quan ly nhan vien">
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="gender"/>
+                        <field name="bdate"/>
+                        <field name="cmnd"/>
+                        <field name="email"/>
+                        <field name="addr"/>
+                        <field name="describe"/>
+                    </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_qlnv_form">
+            <field name="name">qlnv.form</field>
+            <field name="model">quanly.nhanvien</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                    <form>
+                        <sheet>
+                            <group col="4" name="main">
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="gender"/>
+                        <field name="bdate"/>
+                        <field name="cmnd"/>
+                        <field name="email"/>
+                        <field name="pb_id"/>
+                        <field name="addr" colspan="4"/>
+                        <field name="describe" colspan="4"/>
+                                <field name="m2m" colspan="4"/>
+                            </group>
+                        </sheet>
+                    </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_qlnv_search">
+            <field name="name">qlnv.search</field>
+            <field name="model">quanly.nhanvien</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                    <search string="quan ly nhan vien">
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="gender"/>
+                        <field name="bdate"/>
+                        <field name="cmnd"/>
+                        <field name="email"/>
+                        <field name="addr"/>
+                        <field name="describe"/>
+                    </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_qlnv_view">
+            <field name="name">Quan Ly nhan vien</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">quanly.nhanvien</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_qlnv_search"/>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem id="menu_qlnv" name="Quan Ly Nhan Vien" sequence="1" action="act_open_qlnv_view"/>
+    </data>
+</odoo>
