@@ -1,0 +1,157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* company_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-27 02:29+0000\n"
+"PO-Revision-Date: 2018-06-27 10:30+0700\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.8\n"
+"Last-Translator: \n"
+"Language: vi\n"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_m2m
+msgid "Add Department"
+msgstr "Thêm Phòng Ban"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_phongban_m2m
+msgid "Add Employee"
+msgstr "Thêm nhân viên"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_addr
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_bdate
+msgid "Birth Date"
+msgstr "Ngày sinh"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_code
+#: model:ir.model.fields,field_description:company_manager.field_quanly_phongban_code
+msgid "Code"
+msgstr "Mã Phòng Ban"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_pb_id
+#: model:ir.model.fields,field_description:company_manager.field_working_time_pb_id
+msgid "Department"
+msgstr "Phòng Ban"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_describe
+#: model:ir.model.fields,field_description:company_manager.field_quanly_phongban_describe
+msgid "Descrition"
+msgstr "Mô tả"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_display_name
+#: model:ir.model.fields,field_description:company_manager.field_quanly_phongban_display_name
+#: model:ir.model.fields,field_description:company_manager.field_working_time_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_email
+msgid "Email"
+msgstr "Email"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_working_time_nv_id
+msgid "Employees"
+msgstr "Nhân viên"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_working_time_end_time
+msgid "End Time"
+msgstr "Thời gian nghỉ"
+
+#. module: company_manager
+#: selection:quanly.nhanvien,gender:0
+msgid "Female"
+msgstr "Nữ"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_gender
+msgid "Gender"
+msgstr "Giới tính"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien___last_update
+#: model:ir.model.fields,field_description:company_manager.field_quanly_phongban___last_update
+#: model:ir.model.fields,field_description:company_manager.field_working_time___last_update
+msgid "Last Modified on"
+msgstr "Chỉnh sửa lần cuối vào"
+
+#. module: company_manager
+#: selection:quanly.nhanvien,gender:0
+msgid "Male"
+msgstr "Nam"
+
+#. module: company_manager
+#: model:ir.actions.act_window,name:company_manager.act_open_qlpb_view
+#: model:ir.ui.menu,name:company_manager.menu_qlpb
+msgid "Manage Department"
+msgstr "Quản lý Phòng Ban"
+
+#. module: company_manager
+#: model:ir.actions.act_window,name:company_manager.act_open_qlnv_view
+#: model:ir.ui.menu,name:company_manager.menu_qlnv
+msgid "Manage Employee"
+msgstr "Quản Lý Nhân Viên"
+
+#. module: company_manager
+#: model:ir.model,name:company_manager.model_quanly_nhanvien
+msgid "Manage Employees"
+msgstr "Quản Lý Nhân Viên"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_name
+#: model:ir.model.fields,field_description:company_manager.field_quanly_phongban_name
+#: model:ir.model.fields,field_description:company_manager.field_working_time_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: company_manager
+#: selection:quanly.nhanvien,gender:0
+msgid "Other"
+msgstr "Khác"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_quanly_nhanvien_cmnd
+msgid "Peolpe ID"
+msgstr "Số CMND"
+
+#. module: company_manager
+#: model:ir.model.fields,field_description:company_manager.field_working_time_start_time
+msgid "Start Time"
+msgstr "Thời gian bắt đầu"
+
+#. module: company_manager
+#: model:ir.actions.act_window,name:company_manager.act_open_working_time_view
+#: model:ir.model,name:company_manager.model_working_time
+#: model:ir.ui.menu,name:company_manager.menu_working_time
+msgid "Working Time"
+msgstr "Thời gian làm việc"
+
+#. module: company_manager
+#: model:ir.model,name:company_manager.model_quanly_phongban
+msgid "manage_department"
+msgstr "manage_department"
+
+#. module: company_manager
+#: model:ir.ui.view,arch_db:company_manager.view_qlnv_search
+#: model:ir.ui.view,arch_db:company_manager.view_qlnv_tree
+msgid "quan ly nhan vien"
+msgstr "manage_department"

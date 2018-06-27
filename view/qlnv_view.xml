@@ -7,14 +7,17 @@
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
                     <tree string="quan ly nhan vien">
-                        <field name="code"/>
-                        <field name="name"/>
-                        <field name="gender"/>
-                        <field name="bdate"/>
-                        <field name="cmnd"/>
-                        <field name="email"/>
-                        <field name="addr"/>
-                        <field name="describe"/>
+                                <field name="code"/>
+                                <field name="name"/>
+                                <field name="gender"/>
+                                <field name="bdate"/>
+                                <field name="cmnd"/>
+                                <field name="email"/>
+                                <field name="addr"/>
+                                <field name="describe"/>
+                                <field name="party"/>
+                                <field name="married"/>
+                                <field name="abc"/>
                     </tree>
             </field>
         </record>
@@ -26,16 +29,19 @@
                     <form>
                         <sheet>
                             <group col="4" name="main">
-                        <field name="code"/>
-                        <field name="name"/>
-                        <field name="gender"/>
-                        <field name="bdate"/>
-                        <field name="cmnd"/>
-                        <field name="email"/>
-                        <field name="pb_id"/>
-                        <field name="addr" colspan="4"/>
-                        <field name="describe" colspan="4"/>
+                                <field name="code"/>
+                                <field name="name"/>
+                                <field name="gender"/>
+                                <field name="bdate"/>
+                                <field name="cmnd"/>
+                                <field name="email"/>
+                                <field name="pb_id"/>
+                                <field name="addr" colspan="4"/>
+                                <field name="describe" colspan="4"/>
                                 <field name="m2m" colspan="4"/>
+                                <field name="party"/>
+                                <field name="married"/>
+                                <field name="abc"/>
                             </group>
                         </sheet>
                     </form>
@@ -55,11 +61,12 @@
                         <field name="email"/>
                         <field name="addr"/>
                         <field name="describe"/>
+                        <field name="party"/>
                     </search>
             </field>
         </record>
         <record model="ir.actions.act_window" id="act_open_qlnv_view">
-            <field name="name">Quan Ly nhan vien</field>
+            <field name="name">Manage Employee</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">quanly.nhanvien</field>
             <field name="view_type">form</field>
@@ -68,6 +75,6 @@
             <field name="context">{}</field>
         </record>
 
-        <menuitem id="menu_qlnv" name="Quan Ly Nhan Vien" sequence="1" action="act_open_qlnv_view"/>
+        <menuitem id="menu_qlnv" name="Manage Employee" sequence="1" action="act_open_qlnv_view"/>
     </data>
 </odoo>

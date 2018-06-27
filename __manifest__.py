@@ -1,10 +1,10 @@
 # -*-coding: utf-8 -*-
 {
-    'name': 'Huong',
+    'name': 'CM Lite',
     'version': '1.0.0',
-    'category': 'Job',
+    'category': 'Company',
     "sequence": 1,
-    'summary': 'Manage Room',
+    'summary': 'Manager ,Department, Employee',
     'complexity': "easy",
     'author': 'VNITPro',
     'website': 'http://vnitpro.vn',

@@ -7,11 +7,11 @@
             <field name="priority" eval="8"></field>
             <field name="arch" type="xml">
                     <tree string="">
-                        <field name="start_time"/>
-                        <field name="end_time"/>
                         <field name="nv_id"/>
                         <field name="pb_id"/>
-                        <field name="name"/>
+                        <field name="start_time"/>
+                        <field name="end_time"/>
+
                     </tree>
             </field>
         </record>
@@ -23,12 +23,12 @@
                     <form string="">
                         <sheet>
                             <group col="4" name="main">
-                                <field name="start_time"/>
-                                <field name="end_time"/>
-                                <field name="nv_id"/>
                                 <field name="pb_id"/>
+                                <field name="nv_id"/>
+                                <field name="email" readonly="1"/>
                                 <field name="name"/>
-
+                                <field name="start_time" colspan="2"/>
+                                <field name="end_time" colspan="2"/>
                             </group>
                         </sheet>
                     </form>
@@ -40,16 +40,15 @@
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
                     <search string="">
-                        <field name="start_time"/>
-                        <field name="end_time"/>
                         <field name="nv_id"/>
                         <field name="pb_id"/>
-                        <field name="name"/>
+                        <field name="start_time"/>
+                        <field name="end_time"/>
                     </search>
             </field>
         </record>
         <record model="ir.actions.act_window" id="act_open_working_time_view">
-            <field name="name">Quan Ly Phong Ban</field>
+            <field name="name">Working Time</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">working.time</field>
             <field name="view_type">form</field>

@@ -43,7 +43,7 @@
             </field>
         </record>
         <record model="ir.actions.act_window" id="act_open_qlpb_view">
-            <field name="name">Quan Ly Phong Ban</field>
+            <field name="name">Manage Department</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">quanly.phongban</field>
             <field name="view_type">form</field>
@@ -52,6 +52,6 @@
             <field name="context">{}</field>
         </record>
 
-        <menuitem id="menu_qlpb" name="Quan Ly Phong Ban" sequence="1" action="act_open_qlpb_view"/>
+        <menuitem id="menu_qlpb" name="Manage Department" sequence="1" action="act_open_qlpb_view"/>
     </data>
 </odoo>
